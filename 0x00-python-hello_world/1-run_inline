@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 "print(Hello)" + ".py"
+echo "Best School: 98"
