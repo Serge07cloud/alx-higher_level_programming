@@ -34,3 +34,4 @@ if __name__ == "__main__":
             exit(1)
         else:
             print('Unknown operator. Available operators: +, -, * and /')
+            exit(1)
