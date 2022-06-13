@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 printf "#!/usr/bin/python3\n$PYCODE" > test.py
+python3 -c "$PYCODE"
