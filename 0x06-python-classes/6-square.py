@@ -25,7 +25,7 @@ class Square:
                     if type(position[i]) is int and position[i] > -1:
                         pass
                     else:
-                        raise TypeError
+                        raise TypeError(err_msg)
                 # If there is no error, then we set the value of the attribute
                 self.__position = position
             else:
@@ -70,12 +70,12 @@ class Square:
                     if type(pos[i]) is int and pos[i] > -1:
                         pass
                     else:
-                        raise TypeError
+                        raise TypeError(err_msg)
                 # If there is no error, then we set the value of the attribute
                 self.__position = pos
             else:
                 raise TypeError(err_msg)
-        except TypeError:
+        except Exception:
             raise
 
     def my_print(self):
