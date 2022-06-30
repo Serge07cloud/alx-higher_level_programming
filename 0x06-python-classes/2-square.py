@@ -8,13 +8,10 @@ class Square:
     def __init__(self, size=0):
         """Instanciation of a new square object."""
         
-        self.__size = 0
-
         try:
-
             if type(size) is int:
 
-                if size >= 0:
+                if size > -1:
 
                     self.__size = size  #: Size of the square
 
