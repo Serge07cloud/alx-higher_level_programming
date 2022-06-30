@@ -15,5 +15,5 @@ class Square:
                     raise ValueError("size must be >= 0")
             else:
                 raise TypeError('size must be integer')
-        except Exception as ex:
-            print(ex.args[0])
+        except Exception:
+            raise
