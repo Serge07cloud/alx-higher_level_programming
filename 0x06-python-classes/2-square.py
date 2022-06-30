@@ -7,17 +7,10 @@ class Square:
 
     def __init__(self, size=0):
         """Instanciation of a new square object."""
-
-        try:
-            if type(size) is int:
-                if size > -1:
-                    self.__size = size  #: Size of the square
-                else:
-                    raise ValueError
+        if type(size) is int:
+            if size > -1:
+                self.__size = size
             else:
-                raise TypeError
-
-        except ValueError:
-            print("size must be >= 0")
-        except TypeError:
+                print("size must be >= 0")
+        else:
             print("size must be an integer")
