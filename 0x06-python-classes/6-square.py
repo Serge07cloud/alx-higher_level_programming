@@ -18,6 +18,7 @@ class Square:
         except Exception:
             raise
 
+        err_msg = "position must be a tuple of 2 positive integers"
         try:
             if type(position) is tuple and len(position) == 2:
                 for i in range(2):
@@ -28,9 +29,9 @@ class Square:
                 # If there is no error, then we set the value of the attribute
                 self.__position = position
             else:
-                raise TypeError
-        except Exception:
-            raise("position must be a tuple of 2 positive integers")
+                raise TypeError(err_msg)
+        except TypeError:
+            raise
 
     def area(self):
         """Returns the area of the square."""
@@ -62,6 +63,7 @@ class Square:
 
     @position.setter
     def position(self, pos):
+        err_msg = "position must be a tuple of 2 positive integers"
         try:
             if type(pos) is tuple and len(pos) == 2:
                 for i in range(2):
@@ -72,9 +74,9 @@ class Square:
                 # If there is no error, then we set the value of the attribute
                 self.__position = pos
             else:
-                raise TypeError
-        except Exception:
-            raise("position must be a tuple of 2 positive integers")
+                raise TypeError(err_msg)
+        except TypeError:
+            raise
 
     def my_print(self):
         """Prints a square"""
