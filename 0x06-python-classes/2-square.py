@@ -14,7 +14,7 @@ class Square:
 
             if type(size) is int:
 
-                if size > 0:
+                if size >= 0:
 
                     self.__size = size  #: Size of the square
 
