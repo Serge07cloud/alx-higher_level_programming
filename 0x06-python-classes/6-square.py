@@ -15,7 +15,7 @@ class Square:
                     raise ValueError("size must be >= 0")
             else:
                 raise TypeError('size must be an integer')
-        except (ValueError, TypeError):
+        except Exception:
             raise
 
         try:
@@ -29,7 +29,7 @@ class Square:
                 self.__position = position
             else:
                 raise TypeError
-        except TypeError:
+        except Exception:
             raise("position must be a tuple of 2 positive integers")
 
     def area(self):
@@ -57,7 +57,7 @@ class Square:
                     raise ValueError("size must be >= 0")
             else:
                 raise TypeError('size must be an integer')
-        except (ValueError, TypeError):
+        except Exception:
             raise
 
     @position.setter
@@ -73,7 +73,7 @@ class Square:
                 self.__position = pos
             else:
                 raise TypeError
-        except TypeError:
+        except Exception:
             raise("position must be a tuple of 2 positive integers")
 
     def my_print(self):
