@@ -52,7 +52,7 @@ class Rectangle:
         if self.__width != 0 and self.__height != 0:
             for i in range(self.__height):
                 for j in range(self.__width):
-                    print(str("#"), end="")
+                    print("#", end="")
                 print()
             return (self.__height + self.__width) * 2
         else:
