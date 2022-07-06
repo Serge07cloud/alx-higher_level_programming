@@ -43,6 +43,9 @@ class Rectangle:
         except Exception:
             raise
 
+    def __str__(self):
+        return "#"
+
     def area(self):
         """This method returns the rectangle area."""
         return self.__height * self.__width
@@ -52,7 +55,7 @@ class Rectangle:
         if self.__width != 0 and self.__height != 0:
             for i in range(self.__height):
                 for j in range(self.__width):
-                    print("#", end="")
+                    print(str('#'), end="")
                 print()
             return (self.__height + self.__width) * 2
         else:
