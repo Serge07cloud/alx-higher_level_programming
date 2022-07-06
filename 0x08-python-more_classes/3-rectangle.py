@@ -48,7 +48,8 @@ class Rectangle:
         for i in range(self.__height):
             for j in range(self.__width):
                 out = out + "#"
-            out = out + "\n"
+            if i != self.__height -1:
+                out = out + "\n"
         return out
 
     def area(self):
