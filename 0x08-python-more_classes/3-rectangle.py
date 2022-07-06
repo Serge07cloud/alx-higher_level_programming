@@ -45,11 +45,14 @@ class Rectangle:
 
     def __str__(self):
         out = ""
-        for i in range(self.__height):
-            for j in range(self.__width):
-                out = out + "#"
-            if i != self.__height -1:
-                out = out + "\n"
+        if self.__width != 0 and self.__height != 0:
+            for i in range(self.__height):
+                for j in range(self.__width):
+                    out = out + "#"
+                if i != self.__height - 1:
+                    out = out + "\n"
+        else:
+            out = out + "\n"
         return out
 
     def area(self):
