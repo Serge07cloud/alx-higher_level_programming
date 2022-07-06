@@ -44,7 +44,7 @@ class Rectangle:
             raise
 
     def __repr__(self):
-        return "Rectangle({},{})".format(self.__width, self.__height)
+        return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __str__(self):
         out = ""
