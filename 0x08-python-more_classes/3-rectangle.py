@@ -44,7 +44,12 @@ class Rectangle:
             raise
 
     def __str__(self):
-        return "#"
+        out = ""
+        for i in range(self.__height):
+            for j in range(self.__width):
+                out = out + "#"
+            out = out + "\n"
+        return out
 
     def area(self):
         """This method returns the rectangle area."""
@@ -53,11 +58,6 @@ class Rectangle:
     def perimeter(self):
         """This method returns the perimeter of a rectangle."""
         if self.__width != 0 and self.__height != 0:
-            for i in range(self.__height):
-                for j in range(self.__width):
-                    print(str('#'), end="")
-                print()
             return (self.__height + self.__width) * 2
         else:
-            print()
             return 0
