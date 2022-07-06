@@ -51,8 +51,6 @@ class Rectangle:
                     out = out + "#"
                 if i != self.__height - 1:
                     out = out + "\n"
-        else:
-            out = out + "\n"
         return out
 
     def area(self):
