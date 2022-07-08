@@ -81,7 +81,6 @@ class Rectangle:
 
     def __str__(self):
         if self.__width != 0 and self.__height != 0:
-            out = None
             for i in range(self.__height):
                 for j in range(self.__width):
                     print(self.print_symbol, end="")
@@ -91,4 +90,4 @@ class Rectangle:
 
     def __del__(self):
         print("Bye rectangle...")
-        type(self).number_of_instances -= 1 
+        type(self).number_of_instances -= 1
